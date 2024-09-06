@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+    <title>Veffects - Home</title>
+</head>
+
+<body class="bg-black">
+
+    <!-- ################################################################ nav bar start from here ###################################################################### -->
+
+    <nav class=" z-[30] top-0  absolute h-fit w-full   text-white">
+        <div class="container mx-auto px-3 md:px-4 md:flex justify-between items-center gap-6">
+            <!-- Logo -->
+            <div class="flex  items-center justify-between md:w-auto w-full">
+                <a href="#" class="flex items-center py-5 px-2 text-white flex-1">
+                    <span
+                        class="font-bold  about w-[3.4rem] md:scale-150 md:w-[5.4rem] drop-shadow-xl shadow-blue-200"><img
+                            src="./logo/Veffects white logo.png" alt="" srcset=""></span>
+                </a>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-3xl">
+                        <ion-icon onclick="change(this)" name="menu"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <!-- Primary Navigation -->
+            <div
+                class="hidden  font-semibold md:flex md:flex-row flex-col items-center justify-start md:space-x-1 navigation-menu pb-3 md:pb-0 ">
+                <a href="./index.html" class="py-2  px-3 block hover:text-[#3d7cbc]">Home</a>
+                <a href="#ticket_section" class="py-2 px-3 block hover:text-[#3d7cbc]">Upcoming Events</a>
+
+
+                <a href="#for_contact" class="py-2 px-3 block hover:text-[#3d7cbc]">Contact</a>
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- Mobile Sidebar -->
+    <aside id="mobileMenu"
+        class="bg-black backdrop-blur-md  left-[-80vw]  duration-500 ease-out rounded-2xl fixed z-[100] flex justify-center items-center top-0 w-[80vw]   h-[100vh]">
+
+        <div class="absolute top-0 flex items-center pl-4 w-full h-[5rem] ">
+            <div class="w-[20%] mt-8">
+
+                <img src="./images/logo.png" alt="" srcset="">
+            </div>
+        </div>
+
+        <ul class="min-h-[20rem]  flex flex-col text-white  space-y-6 h-fit items-center text-center w-full text-2xl">
+            <li class="cursor-pointer">
+                <a class="nlink underline-center" href="index.html">Home</a>
+            </li>
+            <li class="cursor-pointer">
+                <a class="nlink underline-center" href="#ticket_section">Upcoming Events</a>
+            </li>
+            <div class="w-full flex justify-center flex-col group">
+                <button
+                    class="flex justify-center  items-center text-gray-800 hover:text-indigo-600 focus:outline-none">
+                    Services
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div
+                    class=" text-sm mt-2 duration-200 ease-out  w-full capitalize rounded-md shadow-lg hidden group-hover:block">
+                    <a href="./services-1.html"
+                        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Scientific
+                        and regulatory advice</a>
+                    <a href="./services-2.html"
+                        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">CMC
+                        dossier authoring</a>
+                    <a href="./services-3.html"
+                        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Training
+                        and coaching</a>
+                </div>
+            </div>
+            <li class="cursor-pointer">
+                <a class="nlink underline-center" href="#for_contact">Contact</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- ############################################### nav bar end from here ############################################################################ -->
+
+
+    <!-- ########################################################################slider is start from here#################################################################### -->
+
+    <header class="w-full overflow-hidden min-h-[600px] flex items-end  h-[100vh]">
+
+        <div class="w-full h-full overflow-hidden ">
+
+            <div class="w-full h-full mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="w-full h-full  relative flex justify-center items-center">
+                            <div class="w-full h-full overflow-hidden  absolute  z-[-1] top-0">
+                                <img class="w-full h-full brightness-50 saturate-150  object-center"
+                                    src="./brand_logo_bg/ornaments_bg.png" alt="">
+                            </div>
+
+                            <div class="w-[60%] md:w-[40%] lg:w-[24%]   aspect-auto md:aspect-auto lg:aspect-auto ">
+                                <img class="w-full h-full " src="./brand_logo/ornaments.png" alt="" srcset="">
+                            </div>
+
+                            <div class="absolute z-[20] text-white bottom-12 left-5 items-center ">
+                                <div class="lg:text-2xl flex space-x-3 md:space-x-7">
+                                    <!-- <span></span> -->
+                                    <h1>Design</h1>
+                                    <span class="flex items-center  "><img class="   " src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Create</span>
+                                    <span class="flex items-center"><img class="" src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Impact</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full h-full  relative flex justify-center items-center">
+                            <div class="w-full h-full  absolute  z-[-1] top-0">
+                                <img class="w-full h-full overflow-hidden brightness-50 saturate-150  object-center"
+                                    src="./brand_logo_bg/bioreg_bg.png" alt="">
+                            </div>
+
+                            <div class="w-[60%] md:w-[40%] lg:w-[24%]   aspect-auto md:aspect-auto lg:aspect-auto ">
+                                <img class="w-full h-full object-center   " src="./brand_logo/bioreg.png" alt=""
+                                    srcset="">
+                            </div>
+
+                            <div class="absolute z-[20] text-white bottom-12 left-5 items-center ">
+                                <div class="lg:text-2xl flex space-x-3 md:space-x-7">
+                                    <!-- <span></span> -->
+                                    <h1>Design</h1>
+                                    <span class="flex items-center  "><img class="   " src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Create</span>
+                                    <span class="flex items-center"><img class="" src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Impact</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full h-full  relative flex justify-center items-center">
+                            <div class="w-full h-full overflow-hidden absolute  z-[-1] top-0">
+                                <img class="w-full h-full  brightness-50 saturate-150  object-center"
+                                    src="./brand_logo_bg/nature_bg.png" alt="">
+                            </div>
+
+                            <div class="w-[60%] md:w-[40%] lg:w-[24%]   aspect-auto md:aspect-auto lg:aspect-auto ">
+                                <img class="w-full h-full object-center   " src="./brand_logo/nature.png" alt=""
+                                    srcset="">
+                            </div>
+
+                            <div class="absolute z-[20] text-white bottom-12 left-5 items-center ">
+                                <div class="lg:text-2xl flex space-x-3 md:space-x-7">
+                                    <!-- <span></span> -->
+                                    <h1>Design</h1>
+                                    <span class="flex items-center  "><img class="   " src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Create</span>
+                                    <span class="flex items-center"><img class="" src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Impact</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full h-full  relative flex justify-center items-center">
+                            <div class="w-full overflow-hidden h-full  absolute  z-[-1] top-0">
+                                <img class="w-full h-full brightness-50 saturate-150  object-center"
+                                    src="./brand_logo_bg/posh_paradize_bg.png" alt="">
+                            </div>
+
+                            <div class="w-[60%] md:w-[40%] lg:w-[24%]   aspect-auto md:aspect-auto lg:aspect-auto ">
+                                <img class="w-full h-full object-center   " src="./brand_logo/posh_paradize.png" alt=""
+                                    srcset="">
+                            </div>
+
+                            <div class="absolute z-[20] text-white bottom-12 left-5 items-center ">
+                                <div class="lg:text-2xl flex space-x-3 md:space-x-7">
+                                    <!-- <span></span> -->
+                                    <h1>Design</h1>
+                                    <span class="flex items-center  "><img class="   " src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Create</span>
+                                    <span class="flex items-center"><img class="" src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Impact</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full h-full  relative flex justify-center items-center">
+                            <div class="w-full h-full  absolute  z-[-1] top-0">
+                                <img class="w-full h-full brightness-50 saturate-150  object-center"
+                                    src="./brand_logo_bg/vinayak_bg.png" alt="">
+                            </div>
+
+                            <div class="w-[60%] md:w-[40%] lg:w-[24%]   aspect-auto md:aspect-auto lg:aspect-auto ">
+                                <img class="w-full h-full object-center   " src="./brand_logo/vinayak.png" alt=""
+                                    srcset="">
+                            </div>
+
+                            <div class="absolute z-[20] text-white bottom-12 left-5 items-center ">
+                                <div class="lg:text-2xl flex space-x-3 md:space-x-7">
+                                    <!-- <span></span> -->
+                                    <h1>Design</h1>
+                                    <span class="flex items-center  "><img class="   " src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Create</span>
+                                    <span class="flex items-center"><img class="" src="./simple_images/Arrow.png"
+                                            alt=""></span>
+                                    <span>Impact</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination  right-0"></div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ########################################################################slider is end from here#################################################################### -->
+
+
+    <!-- ########################################### work section start from here ####################################################### -->
+
+    <section class="w-full flex items-center bg-black">
+
+        <div class="container m-auto w-full  min-h-[22rem]">
+                <div class="w-full h-full flex justify-center mt-9 ">
+                    <div class="flex w-fit space-x-5  p-1 items-center ">
+                        <img class="w-[4rem] aspect-auto" src="./Icons/icon_1.png" alt="">
+                            <h1 class="w-fit lg:text-7xl text-white font-semibold">Work</h1>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- ########################################### work section end from here ####################################################### -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 2,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
